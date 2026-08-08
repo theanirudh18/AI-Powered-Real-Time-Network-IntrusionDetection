@@ -1,0 +1,45 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment
+.env
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Backup files
+backup/
+*.bak
+
+# Zip archives
+*.zip
+
+# Uploaded datasets
+uploads/
+
+# Logs
+logs/
+
+# Results
+results/
+
+# Graphs and reports
+graphs/
+reports/
+
+# Large ML artifacts
+*.h5
+*.keras
+*.joblib
+*.pkl
+dataset/raw/
+dataset/interim/
+dataset/processed/
+models/

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        AI Real-Time IDS
+
+    </title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="/">
+
+            <i class="fas fa-shield-alt"></i>
+
+            AI-RealTime-IDS
+
+        </a>
+
+        <button
+
+            class="navbar-toggler"
+
+            data-bs-toggle="collapse"
+
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div
+
+            class="collapse navbar-collapse"
+
+            id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+
+                    <a class="nav-link active"
+
+                       href="/">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+
+                       href="/realtime">
+
+                        Real-Time
+
+                    </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+
+                       href="/about">
+
+                        About
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+
+                <h1>
+
+                    AI Powered
+
+                    <span>
+
+                        Network Intrusion Detection
+
+                    </span>
+
+                </h1>
+
+                <p>
+
+                    Detect cyber attacks using
+
+                    CNN + BiLSTM + Bahdanau Attention.
+
+                    Upload network flow CSV files
+
+                    or monitor traffic in real time.
+
+                </p>
+
+                <div class="mt-4">
+
+                    <a
+
+                        href="/realtime"
+
+                        class="btn btn-success btn-lg">
+
+                        <i class="fas fa-play"></i>
+
+                        Live Monitoring
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="upload-card">
+
+                    <h3>
+
+                        Upload CSV
+
+                    </h3>
+
+                    <form
+
+                        action="/upload"
+
+                        method="POST"
+
+                        enctype="multipart/form-data">
+
+                        <input
+
+                            type="file"
+
+                            class="form-control"
+
+                            name="file"
+
+                            accept=".csv"
+
+                            required>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary w-100 mt-4">
+                            Predict Attacks
+                         </button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- STATISTICS -->
+<!-- ===================================================== -->
+
+<section class="statistics">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="stat-card">
+
+                    <i class="fas fa-bullseye"></i>
+
+                    <h2>
+
+                        98.31%
+
+                    </h2>
+
+                    <p>
+
+                        Model Accuracy
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="stat-card">
+
+                    <i class="fas fa-network-wired"></i>
+
+                    <h2>
+
+                        15
+
+                    </h2>
+
+                    <p>
+
+                        Attack Classes
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="stat-card">
+
+                    <i class="fas fa-microchip"></i>
+
+                    <h2>
+
+                        CNN + BiLSTM
+
+                    </h2>
+
+                    <p>
+
+                        Deep Learning
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="stat-card">
+
+                    <i class="fas fa-database"></i>
+
+                    <h2>
+
+                        CICIDS2017
+
+                    </h2>
+
+                    <p>
+
+                        Dataset
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- FEATURES -->
+<!-- ===================================================== -->
+
+<section class="features">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2>
+
+                System Features
+
+            </h2>
+
+            <p>
+
+                Deep Learning powered intrusion detection platform.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-file-upload fa-3x"></i>
+
+                    <h3>
+
+                        CSV Detection
+
+                    </h3>
+
+                    <p>
+
+                        Upload CICIDS flow files and detect attacks instantly using the trained V2 model.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-wave-square fa-3x"></i>
+
+                    <h3>
+
+                        Real-Time Detection
+
+                    </h3>
+
+                    <p>
+
+                        Monitor live packets and classify traffic using Scapy and the deep learning model.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-chart-pie fa-3x"></i>
+
+                    <h3>
+
+                        Analytics
+
+                    </h3>
+
+                    <p>
+
+                        View attack statistics, prediction confidence and downloadable reports.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- MODEL INFORMATION -->
+<!-- ===================================================== -->
+
+<section class="model-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="info-card">
+
+                    <h2>
+
+                        Model Architecture
+
+                    </h2>
+
+                    <div class="row mt-4">
+
+                        <div class="col-md-2 text-center">
+
+                            <div class="step-box">
+
+                                <i class="fas fa-file-csv fa-2x"></i>
+
+                                <h5 class="mt-3">
+
+                                    CSV Input
+
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-2 text-center">
+
+                            <div class="step-box">
+
+                                <i class="fas fa-filter fa-2x"></i>
+
+                                <h5 class="mt-3">
+
+                                    Preprocessing
+
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-2 text-center">
+
+                            <div class="step-box">
+
+                                <i class="fas fa-brain fa-2x"></i>
+
+                                <h5 class="mt-3">
+
+                                    CNN
+
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-2 text-center">
+
+                            <div class="step-box">
+
+                                <i class="fas fa-project-diagram fa-2x"></i>
+
+                                <h5 class="mt-3">
+
+                                    BiLSTM
+
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-2 text-center">
+
+                            <div class="step-box">
+
+                                <i class="fas fa-crosshairs fa-2x"></i>
+
+                                <h5 class="mt-3">
+
+                                    Attention
+
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-2 text-center">
+
+                            <div class="step-box">
+
+                                <i class="fas fa-shield-virus fa-2x"></i>
+
+                                <h5 class="mt-3">
+
+                                    Prediction
+
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- FOOTER -->
+<!-- ===================================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <hr>
+
+        <div class="text-center">
+
+            <h5>
+
+                AI Powered Real-Time Network Intrusion Detection System
+
+            </h5>
+
+            <p>
+
+                CNN + BiLSTM + Bahdanau Attention
+
+            </p>
+
+            <p>
+
+                Final Year Project • 2026
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

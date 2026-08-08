@@ -1,0 +1,17 @@
+======================================================================
+FEATURE SELECTION REPORT
+======================================================================
+
+Original Rows    : 2,520,798
+Final Rows       : 2,520,691
+
+Original Columns : 79
+Final Columns    : 48
+Selected Features: 47
+
+Duplicate Rows Removed        : 0
+Negative Flow Duration Removed: 107
+Constant Features Removed     : 8
+Duplicate Features Removed    : 5
+Correlated Features Removed   : 18
+Low Variance Features Removed : 0

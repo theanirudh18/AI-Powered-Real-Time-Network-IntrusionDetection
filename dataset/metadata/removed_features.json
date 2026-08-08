@@ -1,0 +1,40 @@
+{
+    "constant_features": [
+        "Bwd PSH Flags",
+        "Bwd URG Flags",
+        "Fwd Avg Bytes/Bulk",
+        "Fwd Avg Packets/Bulk",
+        "Fwd Avg Bulk Rate",
+        "Bwd Avg Bytes/Bulk",
+        "Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate"
+    ],
+    "duplicate_features": [
+        "Subflow Bwd Packets",
+        "SYN Flag Count",
+        "Subflow Fwd Packets",
+        "Fwd Header Length.1",
+        "CWE Flag Count"
+    ],
+    "correlated_features": [
+        "Total Backward Packets",
+        "Total Length of Bwd Packets",
+        "Fwd Packet Length Std",
+        "Bwd Packet Length Mean",
+        "Bwd Packet Length Std",
+        "Fwd IAT Total",
+        "Fwd IAT Max",
+        "Fwd Packets/s",
+        "Packet Length Std",
+        "ECE Flag Count",
+        "Average Packet Size",
+        "Avg Fwd Segment Size",
+        "Avg Bwd Segment Size",
+        "Subflow Fwd Bytes",
+        "Subflow Bwd Bytes",
+        "Idle Mean",
+        "Idle Max",
+        "Idle Min"
+    ],
+    "low_variance_features": []
+}

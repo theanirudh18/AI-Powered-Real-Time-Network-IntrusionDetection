@@ -1,0 +1,671 @@
+/*
+==========================================================
+AI Real-Time IDS Dashboard
+Cyber Security Theme
+==========================================================
+*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:#0b1120;
+
+    color:#ffffff;
+
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+/* ====================================================== */
+/* NAVBAR */
+/* ====================================================== */
+
+.navbar{
+
+    background:#111827;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+
+}
+
+.navbar-brand{
+
+    font-size:1.4rem;
+
+    color:#00d9ff !important;
+
+}
+
+.nav-link{
+
+    color:#d1d5db !important;
+
+    margin-left:20px;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#00d9ff !important;
+
+}
+
+/* ====================================================== */
+/* HERO */
+/* ====================================================== */
+
+.hero{
+
+    padding:80px 0;
+
+}
+
+.hero h1{
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    line-height:1.3;
+
+}
+
+.hero span{
+
+    color:#00d9ff;
+
+}
+
+.hero p{
+
+    color:#b8c1cc;
+
+    margin-top:20px;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+}
+
+/* ====================================================== */
+/* BUTTONS */
+/* ====================================================== */
+
+.btn-primary{
+
+    background:#2563eb;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:12px 25px;
+
+}
+
+.btn-primary:hover{
+
+    background:#1d4ed8;
+
+}
+
+.btn-success{
+
+    border-radius:12px;
+
+    padding:12px 25px;
+
+}
+
+/* ====================================================== */
+/* UPLOAD CARD */
+/* ====================================================== */
+
+.upload-card{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.upload-card h3{
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+}
+
+.upload-card input{
+
+    background:#1f2937;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:10px;
+
+}
+/* ====================================================== */
+/* STATISTICS */
+/* ====================================================== */
+
+.statistics{
+
+    padding:40px 0 70px;
+
+}
+
+.stat-card{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    text-align:center;
+
+    padding:35px 20px;
+
+    transition:.35s;
+
+    height:100%;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#00d9ff;
+
+    box-shadow:0 20px 45px rgba(0,217,255,.20);
+
+}
+
+.stat-card i{
+
+    color:#00d9ff;
+
+    font-size:2.4rem;
+
+    margin-bottom:20px;
+
+}
+
+.stat-card h2{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+.stat-card p{
+
+    color:#b8c1cc;
+
+    margin-top:10px;
+
+}
+
+/* ====================================================== */
+/* FEATURES */
+/* ====================================================== */
+
+.features{
+
+    padding:70px 0;
+
+}
+
+.features h2{
+
+    font-weight:700;
+
+}
+
+.features p{
+
+    color:#b8c1cc;
+
+}
+
+.feature-card{
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#00d9ff;
+
+}
+
+.feature-card i{
+
+    color:#00d9ff;
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h3{
+
+    margin-bottom:20px;
+
+}
+
+.feature-card p{
+
+    color:#b8c1cc;
+
+    line-height:1.8;
+
+}
+
+/* ====================================================== */
+/* INFO CARD */
+/* ====================================================== */
+
+.info-card{
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+}
+
+.info-card h2,
+
+.info-card h3{
+
+    margin-bottom:25px;
+
+}
+
+/* ====================================================== */
+/* MODEL STEPS */
+/* ====================================================== */
+
+.step-box{
+
+    background:#0f172a;
+
+    border-radius:15px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:25px 15px;
+
+    transition:.3s;
+
+    height:100%;
+
+}
+
+.step-box:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#00d9ff;
+
+}
+
+.step-box i{
+
+    color:#00d9ff;
+
+}
+
+.step-box h5{
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+/* ====================================================== */
+/* MODEL SECTION */
+/* ====================================================== */
+
+.model-section{
+
+    padding:70px 0;
+
+}
+
+/* ====================================================== */
+/* FOOTER */
+/* ====================================================== */
+
+.footer{
+
+    margin-top:80px;
+
+    padding:40px 0;
+
+    background:#111827;
+
+    text-align:center;
+
+}
+
+.footer hr{
+
+    border-color:rgba(255,255,255,.10);
+
+    margin-bottom:30px;
+
+}
+
+.footer h5{
+
+    color:#00d9ff;
+
+    margin-bottom:15px;
+
+}
+
+.footer p{
+
+    color:#9ca3af;
+
+    margin-bottom:6px;
+
+}
+
+/* ====================================================== */
+/* FORM */
+/* ====================================================== */
+
+.form-control{
+
+    background:#1f2937;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:white;
+
+    border-radius:12px;
+
+    padding:12px;
+
+}
+
+.form-control:focus{
+
+    background:#1f2937;
+
+    color:white;
+
+    border-color:#00d9ff;
+
+    box-shadow:none;
+
+}
+
+.form-control::file-selector-button{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:8px 15px;
+
+    margin-right:15px;
+
+}
+
+/* ====================================================== */
+/* TABLES */
+/* ====================================================== */
+
+.table{
+
+    color:white;
+
+}
+
+.table-dark{
+
+    --bs-table-bg:#111827;
+
+}
+
+.table th{
+
+    color:#00d9ff;
+
+}
+
+/* ====================================================== */
+/* ALERTS */
+/* ====================================================== */
+
+.alert{
+
+    border-radius:12px;
+
+}
+
+/* ====================================================== */
+/* LINKS */
+/* ====================================================== */
+
+a{
+
+    text-decoration:none;
+
+}
+
+/* ====================================================== */
+/* SCROLLBAR */
+/* ====================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0b1120;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#00d9ff;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#38bdf8;
+
+}
+
+/* ====================================================== */
+/* ANIMATION */
+/* ====================================================== */
+
+.hero,
+.statistics,
+.features,
+.model-section{
+
+    animation:fadeIn 0.8s ease-in-out;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ====================================================== */
+/* RESPONSIVE */
+/* ====================================================== */
+
+@media(max-width:992px){
+
+    .hero{
+
+        text-align:center;
+
+    }
+
+    .hero h1{
+
+        font-size:2.4rem;
+
+    }
+
+    .upload-card{
+
+        margin-top:40px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero{
+
+        padding:60px 0;
+
+    }
+
+    .hero h1{
+
+        font-size:2rem;
+
+    }
+
+    .stat-card{
+
+        margin-bottom:20px;
+
+    }
+
+    .feature-card{
+
+        margin-bottom:20px;
+
+    }
+
+    .info-card{
+
+        padding:25px;
+
+    }
+
+    .step-box{
+
+        margin-bottom:20px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .navbar-brand{
+
+        font-size:1.1rem;
+
+    }
+
+    .hero h1{
+
+        font-size:1.7rem;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+    }
+
+}
