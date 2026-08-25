@@ -2,19 +2,19 @@
 
 A **hybrid AI-powered Network Intrusion Detection System (NIDS)** that performs **real-time packet capture, flow-based feature extraction, deep learning inference (CNN + BiLSTM + Attention), and live attack monitoring through a Flask dashboard**.
 
-The project combines **machine learning** with **behavior-based intrusion detection** to monitor network traffic in real time and identify suspicious activities such as **PortScan** and other network attack categories.
+The project combines a **deep learning classifier** with a **behavior-based rule engine** to monitor live network traffic and detect suspicious activity — including PortScan, DDoS, Brute Force, Bot traffic, and Web Attacks — in real time.
 
 ## Features
 
 * Real-time packet capture using **Scapy**
-* Flow-based traffic analysis
-* **47 network traffic features** extracted in real time
-* **CNN + BiLSTM + Attention** deep learning architecture
-* **Behavior-based PortScan detection**
-* Live Flask dashboard
-* Real-time detection feed
+* Flow-based traffic analysis with correct microsecond-precision timing (matched to CICFlowMeter conventions)
+* **47 network traffic features** extracted live, in the same units and order as training
+* **CNN + BiLSTM + Bahdanau Attention** deep learning classifier
+* **Hybrid detection engine**: ML classifier + behavior-based PortScan rule detector
+* **Confidence-thresholded alerting** — low-confidence non-benign predictions are surfaced as "Uncertain" rather than false-flagged as attacks
+* Cooldown-based re-alerting (repeated attacks from the same source are re-flagged after a configurable interval, without spamming)
+* Live Flask dashboard with permanent session statistics, scrollable live feed, and a persistent attack history
 * Modular preprocessing, training, and deployment pipeline
-* Easy extension for additional attack signatures
 
 ## Screenshots
 
@@ -36,7 +36,7 @@ Flow Manager
        +----------------------+
        |                      |
        v                      v
-Feature Extraction      PortScan Detector
+Feature Extraction      PortScan Detector (rule-based)
        |                      |
        v                      |
 CNN + BiLSTM + Attention Model |
@@ -47,7 +47,7 @@ CNN + BiLSTM + Attention Model |
           Flask Dashboard
                   |
                   v
-         Live Attack Monitoring
+   Live Feed + Attack History + Stats
 ```
 
 ## Project Structure
@@ -142,58 +142,60 @@ pip install -r requirements.txt
 Start the IDS:
 
 ```bash
-sudo python app.py
+sudo venv/bin/python app.py
 ```
 
 The dashboard will be available at:
 
 ```text
-http://127.0.0.1:8000
+http://127.0.0.1:8000/realtime
 ```
 
 ## Real-Time PortScan Test
 
-From another machine (or a test device on the same network), run:
+From the same machine or another device on the network, scan a **different, responsive host** on your LAN (do not scan the machine running the IDS itself — loopback traffic never reaches the capture interface):
 
 ```bash
-nmap -Pn -T4 -p 1-1000 <target-ip>
+sudo nmap -sS -Pn <target-ip>
 ```
 
-The system performs:
+The system performs, end to end:
 
 * Real-time packet capture
-* Flow generation
-* Feature extraction
-* AI inference
-* PortScan behavioral detection
-* Live dashboard updates
+* Flow construction (correct microsecond-precision duration/IAT features)
+* Feature extraction (47 features, matched to training-time units and ordering)
+* AI inference (CNN + BiLSTM + Attention)
+* Behavior-based PortScan detection (20+ distinct destination ports from one source within a 5-second window)
+* Live dashboard update — stat cards, live feed, and persistent attack history
 
 ## Current Status
 
 ### Implemented
 
 * Real-time packet capture
-* Flow management
+* Flow management with accurate timing (fixed a seconds-vs-microseconds unit mismatch between live capture and CICFlowMeter-derived training data)
 * Feature extraction (47 features)
 * CNN + BiLSTM + Attention inference
-* Live Flask dashboard
-* Behavioral PortScan detection
+* Behavior-based PortScan detection, wired into the live alert pipeline
+* Cooldown-based re-alerting per source IP
+* Confidence-thresholded classification (separates genuine attacks from low-confidence "Uncertain" predictions)
+* Live Flask dashboard: permanent session stats, scrollable live feed, persistent attack history table with accurate timestamps
 
-### Under Development
+### Known Limitations
 
-* ML-based PortScan classification alignment
-* Additional attack signatures
-* Dashboard visualization enhancements
-* Performance optimization
+* The ML classifier's PortScan detection is most reliable for probe flows that receive a response (RST/SYN-ACK); scans against hosts that silently drop filtered ports are underrepresented in the CICIDS2017 training distribution for this class. The rule-based detector exists specifically to cover this gap.
+* Session statistics reset on application restart (in-memory only, no persistent database).
+* Tested primarily against PortScan on a local network; other attack categories (DDoS, Brute Force, Web Attacks) rely on the trained classifier without a dedicated rule-based backstop.
 
 ## Future Improvements
 
-* Retrain the model with real-time generated flows
-* Integrate Zeek/Suricata logs
-* Add email/SMS alert notifications
+* Persistent storage (SQLite) so statistics and history survive restarts
+* Attention-weight visualization in the dashboard for per-prediction explainability
+* Live testing and validation against additional attack categories (DoS, Brute Force)
+* Automated response (temporary IP blocking) on high-confidence detections
+* Email/SMS alert notifications
 * REST API support
 * Docker deployment
-* Grafana / Prometheus integration
 * Multi-interface monitoring
 
 ## Disclaimer
@@ -208,4 +210,4 @@ GitHub: https://github.com/theanirudh18
 
 ---
 
-If you find this project useful, consider giving it a **star** on GitHub.
+If you find this project useful, consider giving it a star.
