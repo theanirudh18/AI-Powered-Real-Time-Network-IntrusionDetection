@@ -8,13 +8,14 @@ Detects rapid scans based on destination ports
 
 class PortScanDetector:
 
-    def __init__(self, window=5, threshold=20):
+    def __init__(self, window=5, threshold=20, cooldown=15):
 
         self.window = window
         self.threshold = threshold
+        self.cooldown = cooldown  # seconds before the same IP can alert again
 
         self.history = {}
-        self.alerted = set()
+        self.last_alert_time = {}
 
     def process_packet(self, packet):
 
@@ -42,10 +43,12 @@ class PortScanDetector:
 
         if len(unique_ports) >= self.threshold:
 
-            if src_ip in self.alerted:
+            last_alert = self.last_alert_time.get(src_ip)
+
+            if last_alert is not None and (now - last_alert) < self.cooldown:
                 return None
 
-            self.alerted.add(src_ip)
+            self.last_alert_time[src_ip] = now
 
             return {
                 "label": "PortScan",
@@ -53,7 +56,8 @@ class PortScanDetector:
                 "source_ip": src_ip,
                 "destination_ip": packet["dst_ip"],
                 "protocol": packet["transport"],
-                "ports_scanned": len(unique_ports)
+                "ports_scanned": len(unique_ports),
+                "timestamp": now
             }
 
         return None

@@ -42,4 +42,9 @@ reports/
 dataset/raw/
 dataset/interim/
 dataset/processed/
-models/
+models/*_backup.py
+*_backup.html
+ids_log*.txt
+__pycache__/
+*.pyc
+venv/

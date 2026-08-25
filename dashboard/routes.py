@@ -17,7 +17,7 @@ from flask import (
 import config
 from flask import jsonify
 
-from realtime.websocket import get_results
+from realtime.websocket import get_results, get_stats, get_attack_history
 
 from dashboard.services import PredictionService
 
@@ -163,6 +163,34 @@ def live_packets():
     return jsonify(
 
         get_results()
+
+    )
+
+
+# ==========================================================
+# LIVE STATS (PERMANENT, NEVER RESETS)
+# ==========================================================
+
+@dashboard.route("/live-stats")
+def live_stats():
+
+    return jsonify(
+
+        get_stats()
+
+    )
+
+
+# ==========================================================
+# ATTACK HISTORY (PERSISTS, NEVER CLEARED BY NORMAL TRAFFIC)
+# ==========================================================
+
+@dashboard.route("/attack-history")
+def attack_history():
+
+    return jsonify(
+
+        get_attack_history()
 
     )
 

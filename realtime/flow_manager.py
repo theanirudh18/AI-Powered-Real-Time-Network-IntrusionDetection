@@ -9,6 +9,7 @@ import time
 from realtime.portscan_detector import PortScanDetector
 
 from realtime.flow import Flow
+from realtime.websocket import add_detection
 
 
 class FlowManager:
@@ -17,7 +18,7 @@ class FlowManager:
 
         self.flows = {}
 
-        self.timeout = 30
+        self.timeout = 3
 
         self.extractor = extractor
         self.portscan_detector = PortScanDetector()
@@ -75,7 +76,9 @@ class FlowManager:
 
             "duration": 0,
 
-            "ports_scanned": result["ports_scanned"]
+            "ports_scanned": result["ports_scanned"],
+
+            "timestamp": result.get("timestamp", time.time())
 
         })
 
@@ -120,7 +123,6 @@ class FlowManager:
                 features = self.extractor.extract(flow)
 
                 if features is not None:
-                    
 
                     self.extractor.predict(
 

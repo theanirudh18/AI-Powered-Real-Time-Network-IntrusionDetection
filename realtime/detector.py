@@ -7,6 +7,7 @@ Loads Model + Scaler + Label Encoder
 
 import joblib
 import numpy as np
+import time
 
 from tensorflow.keras.models import load_model
 
@@ -137,13 +138,6 @@ class Detector:
             verbose=0
 
         )
-        print("\n========== CLASS PROBABILITIES ==========")
-
-        for i, p in enumerate(probabilities[0]):
-          label = self.encoder.inverse_transform([i])[0]
-          print(f"{label:25} : {float(p):.6f}")
-
-        print("=========================================\n")
 
         prediction_id = int(
 
@@ -215,7 +209,9 @@ class Detector:
 
                 6
 
-            )
+            ),
+
+            "timestamp": time.time()
 
         }
 
