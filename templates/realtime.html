@@ -466,10 +466,28 @@
                 row.insertCell().innerText =
                     `${Number(result.confidence).toFixed(2)}%`;
     
-                row.insertCell().innerText =
-                    result.ports_scanned
-                        ? `${result.ports_scanned} ports scanned`
-                        : "-";
+                const detailsCell = row.insertCell();
+    
+                if (result.ports_scanned) {
+    
+                    detailsCell.innerText = `${result.ports_scanned} ports scanned`;
+    
+                }
+    
+                else if (Array.isArray(result.top_features) && result.top_features.length > 0) {
+    
+                    detailsCell.innerHTML = result.top_features
+                        .slice(0, 3)
+                        .map(f => `<span class="badge bg-secondary me-1" style="font-weight:400;">${f.feature} · ${f.weight}%</span>`)
+                        .join("");
+    
+                }
+    
+                else {
+    
+                    detailsCell.innerText = "-";
+    
+                }
     
             });
     

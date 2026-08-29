@@ -50,6 +50,18 @@ class Detector:
 
         )
 
+        # Locate the attention layer instance once, so we can read its
+        # weights after every prediction without searching layers each time.
+        self.attention_layer = None
+
+        for layer in self.model.layers:
+
+            if isinstance(layer, BahdanauAttention):
+
+                self.attention_layer = layer
+
+                break
+
         print()
 
         print("======================================")
@@ -131,13 +143,19 @@ class Detector:
 
         )
 
-        probabilities = self.model.predict(
+        # NOTE: model(X, training=False) is used instead of model.predict(X)
+        # because .predict() runs inside a compiled tf.function graph, where
+        # the attention layer's self.last_attention_weights would only ever
+        # capture a symbolic placeholder rather than real values. A direct
+        # eager call re-runs the layer's Python code every time, so we get
+        # the actual numbers back.
+        probabilities = self.model(
 
             X,
 
-            verbose=0
+            training=False
 
-        )
+        ).numpy()
 
         prediction_id = int(
 
@@ -168,6 +186,31 @@ class Detector:
             ]
 
         )[0]
+
+        # ============================================
+        # ATTENTION EXPLAINABILITY
+        # ============================================
+
+        top_features = []
+
+        if self.attention_layer is not None and \
+           getattr(self.attention_layer, "last_attention_weights", None) is not None:
+
+            weights = self.attention_layer.last_attention_weights.numpy()
+
+            weights = weights.reshape(-1)  # (47,)
+
+            ranked = sorted(
+                zip(config.FEATURES, weights),
+                key=lambda pair: pair[1],
+                reverse=True
+            )[:5]
+
+            top_features = [
+                {"feature": name, "weight": round(float(w) * 100, 2)}
+                for name, w in ranked
+            ]
+
         print("\n=========== FLOW DEBUG ===========")
         print(f"Src IP        : {flow.src_ip}")
         print(f"Dst IP        : {flow.dst_ip}")
@@ -211,7 +254,9 @@ class Detector:
 
             ),
 
-            "timestamp": time.time()
+            "timestamp": time.time(),
+
+            "top_features": top_features
 
         }
 
@@ -236,6 +281,11 @@ class Detector:
         print(f"Prediction       : {result['label']}")
 
         print(f"Confidence       : {result['confidence']}%")
+
+        if top_features:
+            print("Top Features     :", ", ".join(
+                f"{f['feature']} ({f['weight']}%)" for f in top_features[:3]
+            ))
 
         print("=" * 60)
 

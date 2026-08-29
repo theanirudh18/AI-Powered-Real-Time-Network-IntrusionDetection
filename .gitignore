@@ -48,3 +48,5 @@ ids_log*.txt
 __pycache__/
 *.pyc
 venv/
+.env
+.env

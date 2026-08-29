@@ -6,6 +6,8 @@ Live Detection Buffer
 
 from collections import deque
 
+from realtime.alerts import send_email_alert
+
 CONFIDENCE_THRESHOLD = 70.0  # below this, a non-BENIGN label is treated as "uncertain"
 
 LIVE_RESULTS = deque(maxlen=100)
@@ -37,6 +39,7 @@ def add_detection(result):
     else:
         TOTAL_STATS["attacks"] += 1
         ATTACK_HISTORY.appendleft(result)
+        send_email_alert(result)
 
 def get_results():
 

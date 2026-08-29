@@ -1,0 +1,1755 @@
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/keras/src/layers/layer.py:431: UserWarning: `build()` was called on layer 'BahdanauAttention', however the layer does not have a `build()` method implemented and it looks like it has unbuilt state. This will cause the layer to be marked as built, despite not being actually built, which may cause failures down the line. Make sure to implement a proper `build()` method.
+  warnings.warn(
+✅ Model Loaded Successfully
+
+============================================================
+ Initializing AI IDS...
+============================================================
+
+======================================
+ Real-Time Detector Loaded 
+======================================
+
+Loaded 47 features.
+✔ AI Pipeline Ready
+============================================================
+
+
+============================================================
+ Starting Packet Capture...
+============================================================
+✔ Packet Capture Thread Started
+
+✔ Dashboard Routes Registered
+
+============================================================
+ AI Real-Time IDS Dashboard
+============================================================
+Running at : http://127.0.0.1:8000
+============================================================
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.5:8000
+[33mPress CTRL+C to quit[0m
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+UDP 192.168.1.13:50464 -> 239.255.255.250:1900
+UDP 192.168.1.13:5353 -> 224.0.0.251:5353
+UDP 192.168.1.5:64979 -> 172.217.24.14:443
+UDP 192.168.1.5:64979 -> 172.217.24.14:443
+UDP 172.217.24.14:443 -> 192.168.1.5:64979
+UDP 172.217.24.14:443 -> 192.168.1.5:64979
+UDP 172.217.24.14:443 -> 192.168.1.5:64979
+UDP 172.217.24.14:443 -> 192.168.1.5:64979
+UDP 172.217.24.14:443 -> 192.168.1.5:64979
+UDP 172.217.24.14:443 -> 192.168.1.5:64979
+UDP 172.217.24.14:443 -> 192.168.1.5:64979
+UDP 192.168.1.13:5353 -> 224.0.0.251:5353
+UDP 192.168.1.5:37910 -> 192.168.1.1:53
+UDP 192.168.1.5:34430 -> 192.168.1.1:53
+UDP 192.168.1.5:5104 -> 192.168.1.1:53
+UDP 192.168.1.1:53 -> 192.168.1.5:37910
+UDP 192.168.1.1:53 -> 192.168.1.5:34430
+UDP 192.168.1.1:53 -> 192.168.1.5:5104
+TCP 104.199.241.202:80 -> 192.168.1.5:58985
+TCP 192.168.1.5:58985 -> 104.199.241.202:80
+UDP 192.168.1.5:65522 -> 239.255.255.250:1900
+UDP 192.168.1.5:65522 -> 239.255.255.250:1900
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 1900.0
+01. Flow Duration                  = 0.0
+02. Total Fwd Packets              = 1.0
+03. Total Length of Fwd Packets    = 179.0
+04. Fwd Packet Length Max          = 179.0
+05. Fwd Packet Length Min          = 179.0
+06. Fwd Packet Length Mean         = 179.0
+07. Bwd Packet Length Max          = 0.0
+08. Bwd Packet Length Min          = 0.0
+09. Flow Bytes/s                   = 0.0
+10. Flow Packets/s                 = 0.0
+11. Flow IAT Mean                  = 0.0
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 0.0
+14. Flow IAT Min                   = 0.0
+15. Fwd IAT Mean                   = 0.0
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 0.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 20.0
+26. Bwd Header Length              = 0.0
+27. Bwd Packets/s                  = 0.0
+28. Min Packet Length              = 179.0
+29. Max Packet Length              = 179.0
+30. Packet Length Mean             = 179.0
+31. Packet Length Variance         = 0.0
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 0.0
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 1.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 0.0
+43. Active Std                     = 0.0
+44. Active Max                     = 0.0
+45. Active Min                     = 0.0
+46. Idle Std                       = 0.0
+==========================================
+TCP 57.144.57.33:5222 -> 192.168.1.5:53645
+TCP 192.168.1.5:53645 -> 57.144.57.33:5222
+TCP 192.168.1.5:53645 -> 57.144.57.33:5222
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.13
+Dst IP        : 239.255.255.250
+Src Port      : 50464
+Dst Port      : 1900
+Protocol      : UDP
+Total Packets : 1
+Duration      : 0.0
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.13
+Destination IP   : 239.255.255.250
+Protocol         : UDP
+Prediction       : BENIGN
+Confidence       : 100.0%
+Top Features     : Fwd IAT Mean (38.39%), Total Length of Fwd Packets (15.82%), Total Fwd Packets (14.38%)
+============================================================
+
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 443.0
+01. Flow Duration                  = 71119.0703125
+02. Total Fwd Packets              = 2.0
+03. Total Length of Fwd Packets    = 2484.0
+04. Fwd Packet Length Max          = 1242.0
+05. Fwd Packet Length Min          = 1242.0
+06. Fwd Packet Length Mean         = 1242.0
+07. Bwd Packet Length Max          = 1242.0
+08. Bwd Packet Length Min          = 85.0
+09. Flow Bytes/s                   = 140904.546875
+10. Flow Packets/s                 = 126.54833984375
+11. Flow IAT Mean                  = 8889.8837890625
+12. Flow IAT Std                   = 14946.181640625
+13. Flow IAT Max                   = 33724.0703125
+14. Flow IAT Min                   = 1.9073486328125
+15. Fwd IAT Mean                   = 98.94371032714844
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 98.94371032714844
+18. Bwd IAT Total                  = 37296.05859375
+19. Bwd IAT Mean                   = 6216.00927734375
+20. Bwd IAT Std                    = 12859.2646484375
+21. Bwd IAT Max                    = 32212.01953125
+22. Bwd IAT Min                    = 1.9073486328125
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 40.0
+26. Bwd Header Length              = 140.0
+27. Bwd Packets/s                  = 98.42648315429688
+28. Min Packet Length              = 85.0
+29. Max Packet Length              = 1242.0
+30. Packet Length Mean             = 1113.4444580078125
+31. Packet Length Variance         = 148738.78125
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 3.5
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 2.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 71119.0703125
+43. Active Std                     = 0.0
+44. Active Max                     = 71119.0703125
+45. Active Min                     = 71119.0703125
+46. Idle Std                       = 0.0
+==========================================
+TCP 192.168.1.5:53645 -> 57.144.57.33:5222
+TCP 57.144.57.33:5222 -> 192.168.1.5:53645
+TCP 57.144.57.33:5222 -> 192.168.1.5:53645
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.5
+Dst IP        : 172.217.24.14
+Src Port      : 64979
+Dst Port      : 443
+Protocol      : UDP
+Total Packets : 9
+Duration      : 71119.07005310059
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.5
+Destination IP   : 172.217.24.14
+Protocol         : UDP
+Prediction       : DoS Slowhttptest
+Confidence       : 53.52%
+Top Features     : Fwd Packet Length Max (68.84%), Flow IAT Max (6.9%), Flow Duration (4.96%)
+============================================================
+
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 0.0
+01. Flow Duration                  = 0.0
+02. Total Fwd Packets              = 1.0
+03. Total Length of Fwd Packets    = 70.0
+04. Fwd Packet Length Max          = 70.0
+05. Fwd Packet Length Min          = 70.0
+06. Fwd Packet Length Mean         = 70.0
+07. Bwd Packet Length Max          = 0.0
+08. Bwd Packet Length Min          = 0.0
+09. Flow Bytes/s                   = 0.0
+10. Flow Packets/s                 = 0.0
+11. Flow IAT Mean                  = 0.0
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 0.0
+14. Flow IAT Min                   = 0.0
+15. Fwd IAT Mean                   = 0.0
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 0.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 20.0
+26. Bwd Header Length              = 0.0
+27. Bwd Packets/s                  = 0.0
+28. Min Packet Length              = 70.0
+29. Max Packet Length              = 70.0
+30. Packet Length Mean             = 70.0/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+31. Packet Length Variance         = 0.0
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 0.0
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 0.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 0.0
+43. Active Std                     = 0.0
+44. Active Max                     = 0.0
+45. Active Min                     = 0.0
+46. Idle Std                       = 0.0
+==========================================
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.5
+Dst IP        : 172.217.24.14
+Src Port      : 0
+Dst Port      : 0
+Protocol      : OTHER
+Total Packets : 1
+Duration      : 0.0
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.5
+Destination IP   : 172.217.24.14
+Protocol         : OTHER
+Prediction       : BENIGN
+Confidence       : 100.0%
+Top Features     : Flow IAT Max (53.71%), Total Fwd Packets (30.58%), Fwd IAT Mean (4.03%)
+============================================================
+
+TCP 57.144.57.33:5222 -> 192.168.1.5:53645
+TCP 192.168.1.5:53645 -> 57.144.57.33:5222
+UDP 192.168.1.5:65522 -> 239.255.255.250:1900
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 5353.0
+01. Flow Duration                  = 1024349.0
+02. Total Fwd Packets              = 2.0
+03. Total Length of Fwd Packets    = 154.0
+04. Fwd Packet Length Max          = 77.0
+05. Fwd Packet Length Min          = 77.0
+06. Fwd Packet Length Mean         = 77.0
+07. Bwd Packet Length Max          = 0.0
+08. Bwd Packet Length Min          = 0.0
+09. Flow Bytes/s                   = 150.33938598632812
+10. Flow Packets/s                 = 1.9524595737457275
+11. Flow IAT Mean                  = 1024349.0
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 1024349.0
+14. Flow IAT Min                   = 1024349.0
+15. Fwd IAT Mean                   = 1024349.0
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 1024349.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 40.0
+26. Bwd Header Length              = 0.0
+27. Bwd Packets/s                  = 0.0
+28. Min Packet Length              = 77.0
+29. Max Packet Length              = 77.0
+30. Packet Length Mean             = 77.0
+31. Packet Length Variance         = 0.0
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 0.0
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 2.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 1024349.0
+43. Active Std                     = 0.0
+44. Active Max                     = 1024349.0
+45. Active Min                     = 1024349.0
+46. Idle Std                       = 0.0
+==========================================
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.13
+Dst IP        : 224.0.0.251
+Src Port      : 5353
+Dst Port      : 5353
+Protocol      : UDP
+Total Packets : 2
+Duration      : 1024348.9742279053
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.13
+Destination IP   : 224.0.0.251
+Protocol         : UDP
+Prediction       : BENIGN
+Confidence       : 85.13%
+Top Features     : Total Fwd Packets (18.41%), Destination Port (18.4%), Flow IAT Max (12.96%)
+============================================================
+
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 53.0
+01. Flow Duration                  = 47236.91796875
+02. Total Fwd Packets              = 1.0
+03. Total Length of Fwd Packets    = 75.0
+04. Fwd Packet Length Max          = 75.0
+05. Fwd Packet Length Min          = 75.0
+06. Fwd Packet Length Mean         = 75.0
+07. Bwd Packet Length Max          = 132.0
+08. Bwd Packet Length Min          = 132.0
+09. Flow Bytes/s                   = 4382.16552734375
+10. Flow Packets/s                 = 42.33976364135742
+11. Flow IAT Mean                  = 47236.91796875
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 47236.91796875
+14. Flow IAT Min                   = 47236.91796875
+15. Fwd IAT Mean                   = 0.0
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 0.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 20.0
+26. Bwd Header Length              = 20.0
+27. Bwd Packets/s                  = 21.16988182067871
+28. Min Packet Length              = 75.0
+29. Max Packet Length              = 132.0
+30. Packet Length Mean             = 103.5
+31. Packet Length Variance         = 1624.5
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 1.0
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 1.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 47236.91796875
+43. Active Std                     = 0.0
+44. Active Max                     = 47236.91796875
+45. Active Min                     = 47236.91796875
+46. Idle Std                       = 0.0
+==========================================
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.5
+Dst IP        : 192.168.1.1
+Src Port      : 37910
+Dst Port      : 53
+Protocol      : UDP
+Total Packets : 2
+Duration      : 47236.91940307617
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.5
+Destination IP   : 192.168.1.1
+Protocol         : UDP
+Prediction       : BENIGN
+Confidence       : 100.0%
+Top Features     : Flow IAT Max (39.1%), Total Length of Fwd Packets (14.09%), Fwd IAT Mean (13.32%)
+============================================================
+
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 53.0
+01. Flow Duration                  = 47055.0078125
+02. Total Fwd Packets              = 1.0
+03. Total Length of Fwd Packets    = 75.0
+04. Fwd Packet Length Max          = 75.0
+05. Fwd Packet Length Min          = 75.0
+06. Fwd Packet Length Mean         = 75.0
+07. Bwd Packet Length Max          = 103.0
+08. Bwd Packet Length Min          = 103.0
+09. Flow Bytes/s                   = 3782.806884765625
+10. Flow Packets/s                 = 42.503448486328125
+11. Flow IAT Mean                  = 47055.0078125
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 47055.0078125
+14. Flow IAT Min                   = 47055.0078125
+15. Fwd IAT Mean                   = 0.0
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 0.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 20.0
+26. Bwd Header Length              = 20.0
+27. Bwd Packets/s                  = 21.251724243164062
+28. Min Packet Length              = 75.0
+29. Max Packet Length              = 103.0
+30. Packet Length Mean             = 89.0
+31. Packet Length Variance         = 392.0
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 1.0
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 1.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 47055.0078125
+43. Active Std                     = 0.0
+44. Active Max                     = 47055.0078125
+45. Active Min                     = 47055.0078125
+46. Idle Std                       = 0.0
+==========================================
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.5
+Dst IP        : 192.168.1.1
+Src Port      : 34430
+Dst Port      : 53
+Protocol      : UDP
+Total Packets : 2
+Duration      : 47055.00602722168
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.5
+Destination IP   : 192.168.1.1
+Protocol         : UDP
+Prediction       : BENIGN
+Confidence       : 100.0%
+Top Features     : Flow IAT Max (39.99%), Fwd Packet Length Max (15.18%), Total Fwd Packets (12.28%)
+============================================================
+
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 53.0
+01. Flow Duration                  = 51096.91796875
+02. Total Fwd Packets              = 1.0
+03. Total Length of Fwd Packets    = 75.0
+04. Fwd Packet Length Max          = 75.0
+05. Fwd Packet Length Min          = 75.0
+06. Fwd Packet Length Mean         = 75.0
+07. Bwd Packet Length Max          = 91.0
+08. Bwd Packet Length Min          = 91.0
+09. Flow Bytes/s                   = 3248.728271484375
+10. Flow Packets/s                 = 39.14130401611328
+11. Flow IAT Mean                  = 51096.91796875
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 51096.91796875
+14. Flow IAT Min                   = 51096.91796875
+15. Fwd IAT Mean                   = 0.0
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 0.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 20.0
+26. Bwd Header Length              = 20.0
+27. Bwd Packets/s                  = 19.57065200805664
+28. Min Packet Length              = 75.0
+29. Max Packet Length              = 91.0
+30. Packet Length Mean             = 83.0
+31. Packet Length Variance         = 128.0
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 1.0
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 1.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 51096.91796875
+43. Active Std                     = 0.0
+44. Active Max                     = 51096.91796875
+45. Active Min                     = 51096.91796875
+46. Idle Std                       = 0.0
+==========================================
+UDP 192.168.1.5:57621 -> 192.168.1.255:57621
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.5
+Dst IP        : 192.168.1.1
+Src Port      : 5104
+Dst Port      : 53
+Protocol      : UDP
+Total Packets : 2
+Duration      : 51096.91619873047
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.5
+Destination IP   : 192.168.1.1
+Protocol         : UDP
+Prediction       : BENIGN
+Confidence       : 100.0%
+Top Features     : Flow IAT Max (40.35%), Fwd Packet Length Max (18.74%), Total Fwd Packets (11.94%)
+============================================================
+
+UDP 192.168.1.5:65522 -> 239.255.255.250:1900
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 58985.0
+01. Flow Duration                  = 213.14620971679688
+02. Total Fwd Packets              = 1.0
+03. Total Length of Fwd Packets    = 77.0
+04. Fwd Packet Length Max          = 77.0
+05. Fwd Packet Length Min          = 77.0
+06. Fwd Packet Length Mean         = 77.0
+07. Bwd Packet Length Max          = 66.0
+08. Bwd Packet Length Min          = 66.0
+09. Flow Bytes/s                   = 670901.0
+10. Flow Packets/s                 = 9383.23046875
+11. Flow IAT Mean                  = 213.14620971679688
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 213.14620971679688
+14. Flow IAT Min                   = 213.14620971679688
+15. Fwd IAT Mean                   = 0.0
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 0.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 1.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 52.0
+26. Bwd Header Length              = 52.0
+27. Bwd Packets/s                  = 4691.615234375
+28. Min Packet Length              = 66.0
+29. Max Packet Length              = 77.0
+30. Packet Length Mean             = 71.5
+31. Packet Length Variance         = 60.5
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 1.0
+35. ACK Flag Count                 = 2.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 1.0
+38. Init_Win_bytes_forward         = 11.0
+39. Init_Win_bytes_backward        = 2048.0
+40. act_data_pkt_fwd               = 1.0
+41. min_seg_size_forward           = 32.0
+42. Active Mean                    = 213.14620971679688
+43. Active Std                     = 0.0
+44. Active Max                     = 213.14620971679688
+45. Active Min                     = 213.14620971679688
+46. Idle Std                       = 0.0
+==========================================
+
+=========== FLOW DEBUG ===========
+Src IP        : 104.199.241.202
+Dst IP        : 192.168.1.5
+Src Port      : 80
+Dst Port      : 58985
+Protocol      : TCP
+Total Packets : 2
+Duration      : 213.14620971679688
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 104.199.241.202
+Destination IP   : 192.168.1.5
+Protocol         : TCP
+Prediction       : BENIGN
+Confidence       : 99.94%
+Top Features     : Flow Duration (27.76%), Flow IAT Max (20.15%), Fwd Packet Length Max (17.61%)
+============================================================
+
+UDP 192.168.1.5:51973 -> 192.168.1.1:53
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 1900.0
+01. Flow Duration                  = 3003598.0
+02. Total Fwd Packets              = 4.0
+03. Total Length of Fwd Packets    = 852.0
+04. Fwd Packet Length Max          = 213.0
+05. Fwd Packet Length Min          = 213.0
+06. Fwd Packet Length Mean         = 213.0
+07. Bwd Packet Length Max          = 0.0
+08. Bwd Packet Length Min          = 0.0
+09. Flow Bytes/s                   = 283.6597900390625
+10. Flow Packets/s                 = 1.3317362070083618
+11. Flow IAT Mean                  = 1001199.3125
+12. Flow IAT Std                   = 149.4792022705078
+13. Flow IAT Max                   = 1001334.875/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+14. Flow IAT Min                   = 1001039.0
+15. Fwd IAT Mean                   = 1001199.3125
+16. Fwd IAT Std                    = 149.4792022705078
+17. Fwd IAT Min                    = 1001039.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 80.0
+26. Bwd Header Length              = 0.0
+27. Bwd Packets/s                  = 0.0
+28. Min Packet Length              = 213.0
+29. Max Packet Length              = 213.0
+30. Packet Length Mean             = 213.0
+31. Packet Length Variance         = 0.0
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 0.0
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 4.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 3003598.0
+43. Active Std                     = 0.0
+44. Active Max                     = 3003598.0
+45. Active Min                     = 3003598.0
+46. Idle Std                       = 0.0
+==========================================
+UDP 192.168.1.5:26933 -> 192.168.1.1:53
+UDP 192.168.1.5:38344 -> 192.168.1.1:53
+UDP 192.168.1.1:53 -> 192.168.1.5:51973
+UDP 192.168.1.1:53 -> 192.168.1.5:26933
+UDP 192.168.1.1:53 -> 192.168.1.5:38344
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.5
+Dst IP        : 239.255.255.250
+Src Port      : 65522
+Dst Port      : 1900
+Protocol      : UDP
+Total Packets : 4
+Duration      : 3003597.9747772217
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.5
+Destination IP   : 239.255.255.250
+Protocol         : UDP
+Prediction       : BENIGN
+Confidence       : 92.95%
+Top Features     : Fwd IAT Mean (53.22%), Total Length of Fwd Packets (9.85%), Fwd Packet Length Max (6.67%)
+============================================================
+
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 53645.0
+01. Flow Duration                  = 425976.03125
+02. Total Fwd Packets              = 4.0
+03. Total Length of Fwd Packets    = 739.0
+04. Fwd Packet Length Max          = 340.0
+05. Fwd Packet Length Min          = 66.0
+06. Fwd Packet Length Mean         = 184.75
+07. Bwd Packet Length Max          = 221.0
+08. Bwd Packet Length Min          = 66.0
+09. Flow Bytes/s                   = 2831.145263671875
+10. Flow Packets/s                 = 18.780399322509766
+11. Flow IAT Mean                  = 60853.71875
+12. Flow IAT Std                   = 88991.4765625
+13. Flow IAT Max                   = 229646.921875
+14. Flow IAT Min                   = 251.0547637939453
+15. Fwd IAT Mean                   = 141908.328125
+16. Fwd IAT Std                    = 120738.5234375
+17. Fwd IAT Min                    = 4208.087890625
+18. Bwd IAT Total                  = 425002.09375
+19. Bwd IAT Mean                   = 141667.359375
+20. Bwd IAT Std                    = 126819.609375
+21. Bwd IAT Max                    = 270173.0625
+22. Bwd IAT Min                    = 16603.947265625
+23. Fwd PSH Flags                  = 2.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 208.0
+26. Bwd Header Length              = 208.0
+27. Bwd Packets/s                  = 9.390199661254883
+28. Min Packet Length              = 66.0
+29. Max Packet Length              = 340.0
+30. Packet Length Mean             = 150.75
+31. Packet Length Variance         = 12049.357421875
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 4.0
+35. ACK Flag Count                 = 8.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 1.0
+38. Init_Win_bytes_forward         = 2004.0
+39. Init_Win_bytes_backward        = 2045.0
+40. act_data_pkt_fwd               = 2.0
+41. min_seg_size_forward           = 32.0
+42. Active Mean                    = 425976.03125
+43. Active Std                     = 0.0
+44. Active Max                     = 425976.03125
+45. Active Min                     = 425976.03125
+46. Idle Std                       = 0.0
+==========================================
+
+=========== FLOW DEBUG ===========
+Src IP        : 57.144.57.33
+Dst IP        : 192.168.1.5
+Src Port      : 5222
+Dst Port      : 53645
+Protocol      : TCP
+Total Packets : 8
+Duration      : 425976.037979126
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 57.144.57.33
+Destination IP   : 192.168.1.5
+Protocol         : TCP
+Prediction       : BENIGN
+Confidence       : 100.0%
+Top Features     : Flow IAT Max (20.0%), Flow Duration (19.61%), Fwd Packet Length Max (18.62%)
+============================================================
+
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 57621.0
+01. Flow Duration                  = 0.0
+02. Total Fwd Packets              = 1.0
+03. Total Length of Fwd Packets    = 86.0
+04. Fwd Packet Length Max          = 86.0
+05. Fwd Packet Length Min          = 86.0
+06. Fwd Packet Length Mean         = 86.0
+07. Bwd Packet Length Max          = 0.0
+08. Bwd Packet Length Min          = 0.0
+09. Flow Bytes/s                   = 0.0
+10. Flow Packets/s                 = 0.0
+11. Flow IAT Mean                  = 0.0
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 0.0
+14. Flow IAT Min                   = 0.0
+15. Fwd IAT Mean                   = 0.0
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 0.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 20.0
+26. Bwd Header Length              = 0.0
+27. Bwd Packets/s                  = 0.0
+28. Min Packet Length              = 86.0
+29. Max Packet Length              = 86.0
+30. Packet Length Mean             = 86.0
+31. Packet Length Variance         = 0.0
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 0.0
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 1.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 0.0
+43. Active Std                     = 0.0
+44. Active Max                     = 0.0
+45. Active Min                     = 0.0
+46. Idle Std                       = 0.0
+==========================================
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.5
+Dst IP        : 192.168.1.255
+Src Port      : 57621
+Dst Port      : 57621
+Protocol      : UDP
+Total Packets : 1
+Duration      : 0.0
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.5
+Destination IP   : 192.168.1.255
+Protocol         : UDP
+Prediction       : BENIGN
+Confidence       : 100.0%
+Top Features     : Flow Duration (44.4%), Flow IAT Max (25.82%), Total Fwd Packets (15.7%)
+============================================================
+
+TCP 57.144.57.33:5222 -> 192.168.1.5:53645
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 53.0
+01. Flow Duration                  = 48195.125
+02. Total Fwd Packets              = 1.0/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [28/Aug/2026 14:50:19] "GET /live-stats HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2026 14:50:19] "GET /live-packets HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2026 14:50:19] "GET /attack-history HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2026 14:50:19] "GET /live-stats HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2026 14:50:19] "GET /live-packets HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2026 14:50:19] "GET /attack-history HTTP/1.1" 200 -
+TCP 192.168.1.5:53645 -> 57.144.57.33:5222
+
+03. Total Length of Fwd Packets    = 75.0
+04. Fwd Packet Length Max          = 75.0
+05. Fwd Packet Length Min          = 75.0
+06. Fwd Packet Length Mean         = 75.0
+07. Bwd Packet Length Max          = 125.0
+08. Bwd Packet Length Min          = 125.0
+09. Flow Bytes/s                   = 4149.79736328125
+10. Flow Packets/s                 = 41.49797439575195
+11. Flow IAT Mean                  = 48195.125
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 48195.125
+14. Flow IAT Min                   = 48195.125
+15. Fwd IAT Mean                   = 0.0
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 0.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 20.0
+26. Bwd Header Length              = 20.0
+27. Bwd Packets/s                  = 20.748987197875977
+28. Min Packet Length              = 75.0
+29. Max Packet Length              = 125.0
+30. Packet Length Mean             = 100.0
+31. Packet Length Variance         = 1250.0
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 1.0
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 1.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 48195.125
+43. Active Std                     = 0.0
+44. Active Max                     = 48195.125
+45. Active Min                     = 48195.125
+46. Idle Std                       = 0.0
+==========================================
+TCP 192.168.1.5:53645 -> 57.144.57.33:5222
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.5
+Dst IP        : 192.168.1.1
+Src Port      : 51973
+Dst Port      : 53
+Protocol      : UDP
+Total Packets : 2
+Duration      : 48195.12367248535
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.5
+Destination IP   : 192.168.1.1
+Protocol         : UDP
+Prediction       : BENIGN
+Confidence       : 100.0%
+Top Features     : Flow IAT Max (39.45%), Total Length of Fwd Packets (13.64%), Fwd IAT Mean (12.53%)
+============================================================
+
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 53.0
+01. Flow Duration                  = 49421.0703125
+02. Total Fwd Packets              = 1.0
+03. Total Length of Fwd Packets    = 75.0
+04. Fwd Packet Length Max          = 75.0
+05. Fwd Packet Length Min          = 75.0
+06. Fwd Packet Length Mean         = 75.0
+07. Bwd Packet Length Max          = 103.0
+08. Bwd Packet Length Min          = 103.0
+09. Flow Bytes/s                   = 3601.70263671875
+10. Flow Packets/s                 = 40.46856689453125
+11. Flow IAT Mean                  = 49421.0703125
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 49421.0703125
+14. Flow IAT Min                   = 49421.0703125
+15. Fwd IAT Mean                   = 0.0
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 0.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 20.0
+26. Bwd Header Length              = 20.0
+27. Bwd Packets/s                  = 20.234283447265625
+28. Min Packet Length              = 75.0
+29. Max Packet Length              = 103.0
+30. Packet Length Mean             = 89.0
+31. Packet Length Variance         = 392.0
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 1.0
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 1.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 49421.0703125
+43. Active Std                     = 0.0
+44. Active Max                     = 49421.0703125
+45. Active Min                     = 49421.0703125
+46. Idle Std                       = 0.0
+==========================================
+TCP 57.144.57.33:5222 -> 192.168.1.5:53645
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.5
+Dst IP        : 192.168.1.1
+Src Port      : 26933
+Dst Port      : 53
+Protocol      : UDP
+Total Packets : 2
+Duration      : 49421.072006225586
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.5
+Destination IP   : 192.168.1.1
+Protocol         : UDP
+Prediction       : BENIGN
+Confidence       : 100.0%
+Top Features     : Flow IAT Max (40.19%), Fwd Packet Length Max (15.16%), Total Fwd Packets (12.32%)
+============================================================
+
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 53.0
+01. Flow Duration                  = 49260.140625
+02. Total Fwd Packets              = 1.0
+03. Total Length of Fwd Packets    = 75.0
+04. Fwd Packet Length Max          = 75.0
+05. Fwd Packet Length Min          = 75.0
+06. Fwd Packet Length Mean         = 75.0
+07. Bwd Packet Length Max          = 91.0
+08. Bwd Packet Length Min          = 91.0
+09. Flow Bytes/s                   = 3369.864501953125
+10. Flow Packets/s                 = 40.60077667236328
+11. Flow IAT Mean                  = 49260.140625
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 49260.140625
+14. Flow IAT Min                   = 49260.140625
+15. Fwd IAT Mean                   = 0.0
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 0.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 20.0
+26. Bwd Header Length              = 20.0
+27. Bwd Packets/s                  = 20.30038833618164
+28. Min Packet Length              = 75.0
+29. Max Packet Length              = 91.0
+30. Packet Length Mean             = 83.0
+31. Packet Length Variance         = 128.0
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 1.0
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 1.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 49260.140625
+43. Active Std                     = 0.0
+44. Active Max                     = 49260.140625
+45. Active Min                     = 49260.140625
+46. Idle Std                       = 0.0
+==========================================
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.5
+Dst IP        : 192.168.1.1
+Src Port      : 38344
+Dst Port      : 53
+Protocol      : UDP
+Total Packets : 2
+Duration      : 49260.13946533203
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.5
+Destination IP   : 192.168.1.1
+Protocol         : UDP
+Prediction       : BENIGN/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+Confidence       : 100.0%
+Top Features     : Flow IAT Max (40.21%), Fwd Packet Length Max (18.76%), Total Fwd Packets (11.9%)
+============================================================
+
+TCP 192.168.1.5:61896 -> 54.214.153.210:443
+TCP 54.214.153.210:443 -> 192.168.1.5:61896
+UDP 0.0.0.0:68 -> 255.255.255.255:67
+UDP 0.0.0.0:68 -> 255.255.255.255:67
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 53645.0
+01. Flow Duration                  = 162523.03125
+02. Total Fwd Packets              = 2.0
+03. Total Length of Fwd Packets    = 191.0
+04. Fwd Packet Length Max          = 125.0
+05. Fwd Packet Length Min          = 66.0
+06. Fwd Packet Length Mean         = 95.5
+07. Bwd Packet Length Max          = 113.0
+08. Bwd Packet Length Min          = 66.0
+09. Flow Bytes/s                   = 2276.600341796875
+10. Flow Packets/s                 = 24.611896514892578
+11. Flow IAT Mean                  = 54174.34375
+12. Flow IAT Std                   = 58125.31640625
+13. Flow IAT Max                   = 115885.015625
+14. Flow IAT Min                   = 463.0088806152344
+15. Fwd IAT Mean                   = 162523.03125
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 162523.03125
+18. Bwd IAT Total                  = 115885.015625
+19. Bwd IAT Mean                   = 115885.015625
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 115885.015625
+22. Bwd IAT Min                    = 115885.015625
+23. Fwd PSH Flags                  = 1.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 104.0
+26. Bwd Header Length              = 104.0
+27. Bwd Packets/s                  = 12.305948257446289
+28. Min Packet Length              = 66.0
+29. Max Packet Length              = 125.0
+30. Packet Length Mean             = 92.5
+31. Packet Length Variance         = 960.3333129882812
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 2.0
+35. ACK Flag Count                 = 4.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 1.0
+38. Init_Win_bytes_forward         = 2004.0
+39. Init_Win_bytes_backward        = 2041.0
+40. act_data_pkt_fwd               = 1.0
+41. min_seg_size_forward           = 32.0
+42. Active Mean                    = 162523.03125
+43. Active Std                     = 0.0
+44. Active Max                     = 162523.03125
+45. Active Min                     = 162523.03125
+46. Idle Std                       = 0.0
+==========================================
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+
+=========== FLOW DEBUG ===========
+Src IP        : 57.144.57.33
+Dst IP        : 192.168.1.5
+Src Port      : 5222
+Dst Port      : 53645
+Protocol      : TCP
+Total Packets : 4
+Duration      : 162523.0312347412
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 57.144.57.33
+Destination IP   : 192.168.1.5
+Protocol         : TCP
+Prediction       : BENIGN
+Confidence       : 99.99%
+Top Features     : Flow Duration (21.63%), Flow IAT Max (20.82%), Fwd Packet Length Max (15.71%)
+============================================================
+
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+UDP 192.168.1.11:50656 -> 239.255.255.250:1900
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 443.0
+01. Flow Duration                  = 325134.03125
+02. Total Fwd Packets              = 1.0
+03. Total Length of Fwd Packets    = 54.0
+04. Fwd Packet Length Max          = 54.0
+05. Fwd Packet Length Min          = 54.0
+06. Fwd Packet Length Mean         = 54.0
+07. Bwd Packet Length Max          = 54.0
+08. Bwd Packet Length Min          = 54.0
+09. Flow Bytes/s                   = 332.1706848144531
+10. Flow Packets/s                 = 6.151309013366699
+11. Flow IAT Mean                  = 325134.03125
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 325134.03125
+14. Flow IAT Min                   = 325134.03125
+15. Fwd IAT Mean                   = 0.0
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 0.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 40.0
+26. Bwd Header Length              = 40.0
+27. Bwd Packets/s                  = 3.0756545066833496
+28. Min Packet Length              = 54.0
+29. Max Packet Length              = 54.0
+30. Packet Length Mean             = 54.0
+31. Packet Length Variance         = 0.0
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 1.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 1.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 1.0
+38. Init_Win_bytes_forward         = 2047.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 0.0
+41. min_seg_size_forward           = 20.0
+42. Active Mean                    = 325134.03125
+43. Active Std                     = 0.0
+44. Active Max                     = 325134.03125
+45. Active Min                     = 325134.03125
+46. Idle Std                       = 0.0
+==========================================
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.5
+Dst IP        : 54.214.153.210
+Src Port      : 61896
+Dst Port      : 443
+Protocol      : TCP
+Total Packets : 2
+Duration      : 325134.0389251709
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.5
+Destination IP   : 54.214.153.210
+Protocol         : TCP
+Prediction       : BENIGN
+Confidence       : 100.0%
+Top Features     : Total Fwd Packets (19.25%), Flow IAT Max (15.88%), Fwd Packet Length Max (13.82%)
+============================================================
+
+TCP 57.144.57.33:5222 -> 192.168.1.5:53645
+TCP 192.168.1.5:53645 -> 57.144.57.33:5222
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 67.0
+01. Flow Duration                  = 551.9390258789062
+02. Total Fwd Packets              = 2.0
+03. Total Length of Fwd Packets    = 722.0
+04. Fwd Packet Length Max          = 366.0
+05. Fwd Packet Length Min          = 356.0
+06. Fwd Packet Length Mean         = 361.0
+07. Bwd Packet Length Max          = 0.0
+08. Bwd Packet Length Min          = 0.0
+09. Flow Bytes/s                   = 1308115.5
+10. Flow Packets/s                 = 3623.5888671875
+11. Flow IAT Mean                  = 551.9390258789062
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 551.9390258789062
+14. Flow IAT Min                   = 551.9390258789062
+15. Fwd IAT Mean                   = 551.9390258789062
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 551.9390258789062
+18. Bwd IAT Total                  = 0.0/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 40.0
+26. Bwd Header Length              = 0.0
+27. Bwd Packets/s                  = 0.0
+28. Min Packet Length              = 356.0
+29. Max Packet Length              = 366.0
+30. Packet Length Mean             = 361.0
+31. Packet Length Variance         = 50.0
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 0.0
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 2.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 551.9390258789062
+43. Active Std                     = 0.0
+44. Active Max                     = 551.9390258789062
+45. Active Min                     = 551.9390258789062
+46. Idle Std                       = 0.0
+==========================================
+TCP 192.168.1.5:53645 -> 57.144.57.33:5222
+
+=========== FLOW DEBUG ===========
+Src IP        : 0.0.0.0
+Dst IP        : 255.255.255.255
+Src Port      : 68
+Dst Port      : 67
+Protocol      : UDP
+Total Packets : 2
+Duration      : 551.9390106201172
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 0.0.0.0
+Destination IP   : 255.255.255.255
+Protocol         : UDP
+Prediction       : BENIGN
+Confidence       : 100.0%
+Top Features     : Fwd IAT Mean (82.2%), Total Length of Fwd Packets (5.76%), Total Fwd Packets (3.79%)
+============================================================
+
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 22.0
+01. Flow Duration                  = 188266.03125
+02. Total Fwd Packets              = 11.0
+03. Total Length of Fwd Packets    = 2339.0
+04. Fwd Packet Length Max          = 1486.0
+05. Fwd Packet Length Min          = 54.0
+06. Fwd Packet Length Mean         = 212.63636779785156
+07. Bwd Packet Length Max          = 1094.0
+08. Bwd Packet Length Min          = 54.0
+09. Flow Bytes/s                   = 26340.384765625
+10. Flow Packets/s                 = 138.10244750976562
+11. Flow IAT Mean                  = 7530.6416015625
+12. Flow IAT Std                   = 17908.5703125
+13. Flow IAT Max                   = 77140.09375
+14. Flow IAT Min                   = 36.00120544433594
+15. Fwd IAT Mean                   = 18826.603515625
+16. Fwd IAT Std                    = 28671.078125
+17. Fwd IAT Min                    = 1372.098876953125
+18. Bwd IAT Total                  = 134776.828125
+19. Bwd IAT Mean                   = 9626.916015625
+20. Bwd IAT Std                    = 19697.4609375
+21. Bwd IAT Max                    = 77140.09375
+22. Bwd IAT Min                    = 40.0543212890625
+23. Fwd PSH Flags                  = 7.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 452.0
+26. Bwd Header Length              = 612.0
+27. Bwd Packets/s                  = 79.67448425292969
+28. Min Packet Length              = 54.0
+29. Max Packet Length              = 1486.0
+30. Packet Length Mean             = 190.73077392578125
+31. Packet Length Variance         = 119441.5625
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 13.0
+35. ACK Flag Count                 = 25.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 1.3636363744735718
+38. Init_Win_bytes_forward         = 65535.0
+39. Init_Win_bytes_backward        = 65535.0
+40. act_data_pkt_fwd               = 7.0
+41. min_seg_size_forward           = 20.0
+42. Active Mean                    = 188266.03125
+43. Active Std                     = 0.0
+44. Active Max                     = 188266.03125
+45. Active Min                     = 188266.03125
+46. Idle Std                       = 0.0
+==========================================
+TCP 57.144.57.33:5222 -> 192.168.1.5:53645
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.13
+Dst IP        : 192.168.1.5
+Src Port      : 59708
+Dst Port      : 22
+Protocol      : TCP
+Total Packets : 26
+Duration      : 188266.03889465332
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.13
+Destination IP   : 192.168.1.5
+Protocol         : TCP
+Prediction       : BENIGN
+Confidence       : 97.85%
+Top Features     : Fwd Packet Length Max (23.67%), Total Length of Fwd Packets (22.01%), Flow IAT Max (11.59%)
+============================================================
+
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 1900.0
+01. Flow Duration                  = 0.0
+02. Total Fwd Packets              = 1.0
+03. Total Length of Fwd Packets    = 179.0
+04. Fwd Packet Length Max          = 179.0
+05. Fwd Packet Length Min          = 179.0
+06. Fwd Packet Length Mean         = 179.0
+07. Bwd Packet Length Max          = 0.0
+08. Bwd Packet Length Min          = 0.0
+09. Flow Bytes/s                   = 0.0
+10. Flow Packets/s                 = 0.0
+11. Flow IAT Mean                  = 0.0
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 0.0
+14. Flow IAT Min                   = 0.0
+15. Fwd IAT Mean                   = 0.0
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 0.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 20.0
+26. Bwd Header Length              = 0.0
+27. Bwd Packets/s                  = 0.0
+28. Min Packet Length              = 179.0
+29. Max Packet Length              = 179.0
+30. Packet Length Mean             = 179.0
+31. Packet Length Variance         = 0.0
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 0.0
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 1.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 0.0
+43. Active Std                     = 0.0
+44. Active Max                     = 0.0
+45. Active Min                     = 0.0
+46. Idle Std                       = 0.0
+==========================================
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.11
+Dst IP        : 239.255.255.250
+Src Port      : 50656
+Dst Port      : 1900
+Protocol      : UDP
+Total Packets : 1
+Duration      : 0.0
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.11
+Destination IP   : 239.255.255.250
+Protocol         : UDP
+Prediction       : BENIGN
+Confidence       : 100.0%
+Top Features     : Fwd IAT Mean (38.39%), Total Length of Fwd Packets (15.82%), Total Fwd Packets (14.38%)
+============================================================
+
+TCP 57.144.57.33:5222 -> 192.168.1.5:53645
+TCP 192.168.1.5:53645 -> 57.144.57.33:5222
+TCP 192.168.1.5:53645 -> 57.144.57.33:5222
+TCP 57.144.57.33:5222 -> 192.168.1.5:53645
+UDP 192.168.1.5:57621 -> 192.168.1.255:57621
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 53645.0
+01. Flow Duration                  = 3247832.0
+02. Total Fwd Packets              = 4.0
+03. Total Length of Fwd Packets    = 576.0/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+
+04. Fwd Packet Length Max          = 268.0
+05. Fwd Packet Length Min          = 66.0
+06. Fwd Packet Length Mean         = 144.0
+07. Bwd Packet Length Max          = 114.0
+08. Bwd Packet Length Min          = 66.0
+09. Flow Bytes/s                   = 288.1922302246094
+10. Flow Packets/s                 = 2.463181495666504
+11. Flow IAT Mean                  = 463976.0
+12. Flow IAT Std                   = 1083484.0
+13. Flow IAT Max                   = 2918796.0
+14. Flow IAT Min                   = 389.09912109375
+15. Fwd IAT Mean                   = 1082610.625
+16. Fwd IAT Std                    = 1590221.25
+17. Fwd IAT Min                    = 153507.953125
+18. Bwd IAT Total                  = 3183486.0
+19. Bwd IAT Mean                   = 1061162.0
+20. Bwd IAT Std                    = 1641873.625
+21. Bwd IAT Max                    = 2957033.0
+22. Bwd IAT Min                    = 111160.0390625
+23. Fwd PSH Flags                  = 2.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 208.0
+26. Bwd Header Length              = 208.0
+27. Bwd Packets/s                  = 1.231590747833252
+28. Min Packet Length              = 66.0
+29. Max Packet Length              = 268.0
+30. Packet Length Mean             = 117.0
+31. Packet Length Variance         = 5243.4287109375
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 4.0
+35. ACK Flag Count                 = 8.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 1.0
+38. Init_Win_bytes_forward         = 2004.0
+39. Init_Win_bytes_backward        = 2045.0
+40. act_data_pkt_fwd               = 2.0
+41. min_seg_size_forward           = 32.0
+42. Active Mean                    = 3247832.0
+43. Active Std                     = 0.0
+44. Active Max                     = 3247832.0
+45. Active Min                     = 3247832.0
+46. Idle Std                       = 0.0
+==========================================
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+
+=========== FLOW DEBUG ===========
+Src IP        : 57.144.57.33
+Dst IP        : 192.168.1.5
+Src Port      : 5222
+Dst Port      : 53645
+Protocol      : TCP
+Total Packets : 8
+Duration      : 3247832.0598602295
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 57.144.57.33
+Destination IP   : 192.168.1.5
+Protocol         : TCP
+Prediction       : BENIGN
+Confidence       : 100.0%
+Top Features     : Flow IAT Max (35.0%), Flow Duration (15.69%), Total Fwd Packets (10.07%)
+============================================================
+
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 57.144.57.33:5222 -> 192.168.1.5:53645
+TCP 192.168.1.5:53645 -> 57.144.57.33:5222
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:53645 -> 57.144.57.33:5222
+TCP 57.144.57.33:5222 -> 192.168.1.5:53645
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 57621.0
+01. Flow Duration                  = 0.0
+02. Total Fwd Packets              = 1.0
+03. Total Length of Fwd Packets    = 86.0
+04. Fwd Packet Length Max          = 86.0
+05. Fwd Packet Length Min          = 86.0
+06. Fwd Packet Length Mean         = 86.0
+07. Bwd Packet Length Max          = 0.0
+08. Bwd Packet Length Min          = 0.0
+09. Flow Bytes/s                   = 0.0
+10. Flow Packets/s                 = 0.0
+11. Flow IAT Mean                  = 0.0
+12. Flow IAT Std                   = 0.0
+13. Flow IAT Max                   = 0.0
+14. Flow IAT Min                   = 0.0
+15. Fwd IAT Mean                   = 0.0
+16. Fwd IAT Std                    = 0.0
+17. Fwd IAT Min                    = 0.0
+18. Bwd IAT Total                  = 0.0
+19. Bwd IAT Mean                   = 0.0
+20. Bwd IAT Std                    = 0.0
+21. Bwd IAT Max                    = 0.0
+22. Bwd IAT Min                    = 0.0
+23. Fwd PSH Flags                  = 0.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 20.0
+26. Bwd Header Length              = 0.0
+27. Bwd Packets/s                  = 0.0
+28. Min Packet Length              = 86.0
+29. Max Packet Length              = 86.0
+30. Packet Length Mean             = 86.0
+31. Packet Length Variance         = 0.0
+32. FIN Flag Count                 = 0.0
+33. RST Flag Count                 = 0.0
+34. PSH Flag Count                 = 0.0
+35. ACK Flag Count                 = 0.0
+36. URG Flag Count                 = 0.0
+37. Down/Up Ratio                  = 0.0
+38. Init_Win_bytes_forward         = 0.0
+39. Init_Win_bytes_backward        = 0.0
+40. act_data_pkt_fwd               = 1.0
+41. min_seg_size_forward           = 0.0
+42. Active Mean                    = 0.0
+43. Active Std                     = 0.0
+44. Active Max                     = 0.0
+45. Active Min                     = 0.0
+46. Idle Std                       = 0.0
+==========================================
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+
+=========== FLOW DEBUG ===========
+Src IP        : 192.168.1.5
+Dst IP        : 192.168.1.255
+Src Port      : 57621
+Dst Port      : 57621
+Protocol      : UDP
+Total Packets : 1
+Duration      : 0.0
+==================================
+
+============================================================
+REAL-TIME DETECTION
+============================================================
+Source IP        : 192.168.1.5
+Destination IP   : 192.168.1.255
+Protocol         : UDP
+Prediction       : BENIGN
+Confidence       : 100.0%
+Top Features     : Flow Duration (44.4%), Flow IAT Max (25.82%), Total Fwd Packets (15.7%)
+============================================================
+
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.5:22 -> 192.168.1.13:59708
+TCP 192.168.1.13:59708 -> 192.168.1.5:22
+UDP 192.168.1.5:20547 -> 192.168.1.1:53
+UDP 192.168.1.5:38977 -> 192.168.1.1:53
+UDP 192.168.1.5:29275 -> 192.168.1.1:53
+UDP 192.168.1.1:53 -> 192.168.1.5:20547
+UDP 192.168.1.1:53 -> 192.168.1.5:38977
+UDP 192.168.1.1:53 -> 192.168.1.5:29275
+UDP 192.168.1.5:47933 -> 192.168.1.1:53
+
+============= FEATURE VECTOR =============
+00. Destination Port               = 22.0
+01. Flow Duration                  = 1803095.125
+02. Total Fwd Packets              = 12.0
+03. Total Length of Fwd Packets    = 1252.0
+04. Fwd Packet Length Max          = 146.0
+05. Fwd Packet Length Min          = 54.0
+06. Fwd Packet Length Mean         = 104.33333587646484
+07. Bwd Packet Length Max          = 130.0
+08. Bwd Packet Length Min          = 54.0
+09. Flow Bytes/s                   = 1390.941650390625
+10. Flow Packets/s                 = 14.419650077819824
+11. Flow IAT Mean                  = 72123.8046875
+12. Flow IAT Std                   = 147407.4375
+13. Flow IAT Max                   = 646349.9375
+14. Flow IAT Min                   = 85.8306884765625
+15. Fwd IAT Mean                   = 163917.734375
+16. Fwd IAT Std                    = 189921.421875
+17. Fwd IAT Min                    = 16649.9609375
+18. Bwd IAT Total                  = 1754862.125
+19. Bwd IAT Mean                   = 134989.390625
+20. Bwd IAT Std                    = 216660.078125
+21. Bwd IAT Max                    = 699683.875
+22. Bwd IAT Min                    = 2051.114990234375
+23. Fwd PSH Flags                  = 7.0
+24. Fwd URG Flags                  = 0.0
+25. Fwd Header Length              = 480.0
+26. Bwd Header Length              = 560.0
+27. Bwd Packets/s                  = 7.7644267082214355/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/anirudhsingh/AI-RealTime-IDS/venv/lib/python3.11/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(

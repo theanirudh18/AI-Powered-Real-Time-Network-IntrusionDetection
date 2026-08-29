@@ -39,6 +39,10 @@ class BahdanauAttention(Layer):
 
         )
 
+        # Stored for explainability — read after predict() to see which
+        # timesteps (features) the model focused on for the last prediction.
+        self.last_attention_weights = attention_weights
+
         context_vector = attention_weights * values
 
         context_vector = tf.reduce_sum(
