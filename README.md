@@ -125,7 +125,7 @@ cd AI-Powered-Real-Time-Network-IntrusionDetection
 ```
 
 ### Create a virtual environment
-
+for Mac
 ```bash
 python3 -m venv venv
 source venv/bin/activate
