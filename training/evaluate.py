@@ -58,9 +58,9 @@ REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
 GRAPH_DIR.mkdir(parents=True, exist_ok=True)
 
-MODEL_FILE = MODEL_DIR / "v2" / "cnn_bilstm_attention_v2.keras"
+MODEL_FILE = MODEL_DIR / "cnn_bilstm_attention.keras"
 
-HISTORY_FILE = MODEL_DIR / "v2" / "history.json"
+HISTORY_FILE = MODEL_DIR / "history.json"
 
 LABEL_ENCODER = MODEL_DIR / "label_encoder.pkl"
 

@@ -198,10 +198,21 @@ class Detector:
 
             weights = self.attention_layer.last_attention_weights.numpy()
 
-            weights = weights.reshape(-1)  # (47,)
+            # Attention is over 23 pooled positions, not the 47 input features.
+            # Each pooled position p covers input features 2p and 2p+1.
+            weights = weights.reshape(-1)
+
+            names = config.FEATURES
+            labels = []
+            for p in range(len(weights)):
+                first = names[2 * p]
+                if 2 * p + 1 < len(names):
+                    labels.append(f"{first} / {names[2 * p + 1]}")
+                else:
+                    labels.append(first)
 
             ranked = sorted(
-                zip(config.FEATURES, weights),
+                zip(labels, weights),
                 key=lambda pair: pair[1],
                 reverse=True
             )[:5]
