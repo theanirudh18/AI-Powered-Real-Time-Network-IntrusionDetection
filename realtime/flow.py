@@ -7,6 +7,8 @@ Stores packets belonging to a single network flow
 
 import statistics
 
+SERVICE_PORTS = {20,21,22,23,25,53,80,110,123,143,389,443,445,587,993,995,3306,8080,8443}
+
 US_MULTIPLIER = 1_000_000  # seconds -> microseconds, to match CICFlowMeter units
 
 
@@ -26,6 +28,10 @@ class Flow:
 
         self.forward_packets = []
         self.backward_packets = []
+
+        if first_packet["src_port"] in SERVICE_PORTS and first_packet["dst_port"] not in SERVICE_PORTS:
+            self.src_ip, self.dst_ip = self.dst_ip, self.src_ip
+            self.src_port, self.dst_port = self.dst_port, self.src_port
 
         self.add_packet(first_packet)
 
@@ -89,11 +95,11 @@ class Flow:
 
     @property
     def total_forward_bytes(self):
-        return sum(packet["length"] for packet in self.forward_packets)
+        return sum(packet["payload_length"] for packet in self.forward_packets)
 
     @property
     def total_backward_bytes(self):
-        return sum(packet["length"] for packet in self.backward_packets)
+        return sum(packet["payload_length"] for packet in self.backward_packets)
 
     @property
     def total_bytes(self):
@@ -104,13 +110,13 @@ class Flow:
     # ======================================================
 
     def forward_lengths(self):
-        return [packet["length"] for packet in self.forward_packets]
+        return [packet["payload_length"] for packet in self.forward_packets]
 
     def backward_lengths(self):
-        return [packet["length"] for packet in self.backward_packets]
+        return [packet["payload_length"] for packet in self.backward_packets]
 
     def all_lengths(self):
-        return [packet["length"] for packet in self.packets]
+        return [packet["payload_length"] for packet in self.packets]
 
     # ======================================================
     # LENGTH STATISTICS
@@ -443,14 +449,14 @@ class Flow:
     @property
     def fwd_header_length(self):
         return sum(
-            packet["ip_header_length"] + packet["tcp_header_length"]
+            (packet["tcp_header_length"] or 8)
             for packet in self.forward_packets
         )
 
     @property
     def bwd_header_length(self):
         return sum(
-            packet["ip_header_length"] + packet["tcp_header_length"]
+            (packet["tcp_header_length"] or 8)
             for packet in self.backward_packets
         )
 
@@ -472,7 +478,7 @@ class Flow:
     def down_up_ratio(self):
         if self.total_forward_packets == 0:
             return 0
-        return self.total_backward_packets / self.total_forward_packets
+        return self.total_backward_packets // self.total_forward_packets
 
     # ======================================================
     # INITIAL WINDOW SIZE
