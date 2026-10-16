@@ -364,7 +364,7 @@ class Flow:
     def active_times(self):
         if self.duration_seconds <= 0:
             return [0]
-        return [self.duration]
+        return [0]  # CICFlowMeter: Active/Idle only for gaps > 5 s; live flows time out after 3 s
 
     @property
     def idle_times(self):
