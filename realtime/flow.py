@@ -449,14 +449,14 @@ class Flow:
     @property
     def fwd_header_length(self):
         return sum(
-            (packet["tcp_header_length"] or 8)
+            (packet["tcp_header_length"] or 20)
             for packet in self.forward_packets
         )
 
     @property
     def bwd_header_length(self):
         return sum(
-            (packet["tcp_header_length"] or 8)
+            (packet["tcp_header_length"] or 20)
             for packet in self.backward_packets
         )
 
@@ -516,6 +516,4 @@ class Flow:
     def min_seg_size_forward(self):
         if not self.forward_packets:
             return 0
-        return min(
-            packet["tcp_header_length"] for packet in self.forward_packets
-        )
+        return min((packet["tcp_header_length"] or 20) for packet in self.forward_packets)
