@@ -7,7 +7,7 @@ The project combines a **deep learning classifier** with a **behavior-based rule
 ## Features
 
 * Real-time packet capture using **Scapy**
-* Flow-based traffic analysis with correct microsecond-precision timing (matched to CICFlowMeter conventions)
+* Flow-based traffic analysis with correct microsecond-precision timing (matched to CICFlowMeter conventions).
 * **47 network traffic features** extracted live, in the same units and order as training
 * **CNN + BiLSTM + Bahdanau Attention** deep learning classifier
 * **Hybrid detection engine**: ML classifier + behavior-based PortScan rule detector
